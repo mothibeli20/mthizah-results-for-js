@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('foodi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: hsl(138, 96%, 49%);
+  display: flex;
+  font-weight: bold; /* Makes all text bold */
+}
+
+header {
+  color: #960eb1;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: rgba(235, 232, 232, 0);
+}
+
+nav {
+  padding: 10px 0;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #297729;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #FFD700;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: rgba(255, 222, 173, 5.0); /* Make background slightly transparent */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  margin-left: 220px;
+}
+
+h1, h2, h3 {
+  color: #3b9994;
+  font-weight: bold; /* Ensure headings are bold */
+}
+
+form {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(255, 218, 185, 0.9); /* More transparent background */
+  border: 2px solid #FF4500; /* Thicker border for emphasis */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form button {
+  width: calc(100% - 22px); /* Adjusted width for consistent padding */
+  padding: 12px; /* Increased padding for comfort */
+  margin: 10px 0;
+  border: 2px solid #FF4500; /* More pronounced border */
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input::placeholder,
+form select::placeholder {
+  color: hsl(0, 0%, 50%); /* Light gray for placeholder text */
+}
+
+form input:focus,
+form select:focus {
+  border-color: #3b404e; /* Darker color for focus */
+  box-shadow: 0 0 5px rgba(59, 64, 78, 0.5); /* Added shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+form button {
+  background-color: #B7410E; 
+  color: #FFFFFF; /* White text for better contrast */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+}
+
+form button:hover {
+  background-color: #A35F0A; 
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.feedback {
+  margin-top: 10px;
+  color: rgb(10, 136, 42);
+}
+
+#dashboard {
+  border: 1px solid #4CAF50;
+  padding: 15px;
+  background-color: #e9f5e9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #8f360f;
+}
+
+h2 {
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+  color: #B7410E;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #D2B48C;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-weight: bold; /* Ensure list items are bold */
+}
+
+li:hover {
+  background-color: #C6A06D;
+  color: #B7410E;
+}
+
+#dashboard a,
+#product-management a,
+#user-management a {
+  color: #491b07;
+  font-weight: bold; /* Ensure links are bold */
+}
+
+/* New table styles for Inventory */
+.product-table,
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures that borders between cells merge */
+  margin-top: 20px; /* Space above the table */
+}
+
+.product-table th, 
+.product-table td, 
+.transaction-table th, 
+.transaction-table td {
+  border: 1px solid #ddd; /* Light gray border for table cells */
+  padding: 10px; /* Padding inside the cells */
+  text-align: left; /* Align text to the left */
+}
+
+.product-table th, 
+.transaction-table th {
+  background-color: #FFDAB9; /* Light orange background for header */
+  font-weight: bold; /* Bold text for headers */
+}
+
+.product-table tr:hover, 
+.transaction-table tr:hover {
+  background-color: #FFE4C4; /* Light peach background on hover for rows */
+}
+
+.product-table td, 
+.transaction-table td {
+  vertical-align: middle; /* Align text in the middle of the cells */
+}
